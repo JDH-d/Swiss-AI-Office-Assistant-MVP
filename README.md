@@ -97,5 +97,3 @@ Notes on models: the defaults include `gpt-5-nano`/`gpt-5-mini` as placeholders 
 ## Contributing
 Issues and pull requests are welcome. Please discuss significant changes via an issue first.
 
-## License
-Proprietary — All rights reserved. If you plan to open‑source this project, replace this section with a standard license (e.g., MIT or Apache‑2.0) and add a corresponding `LICENSE` file.
