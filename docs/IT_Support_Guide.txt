@@ -1,0 +1,14 @@
+IT Support Guide (Internal)
+
+1. For day-to-day technical issues (e.g., password resets, VPN problems, printer connectivity), please open a ticket via the IT Service Portal. Provide your device type, operating system, location (office/home), and a concise description of the issue. Screenshots are encouraged for speedier diagnosis.
+
+2. Telephone support is available during core hours (08:00–18:00 CET) at extension 1234. For urgent incidents impacting multiple users (e.g., network outage, email disruption), call immediately and mark the ticket as “Major Incident.”
+
+3. New hardware or software requests must be approved by your line manager and, where applicable, the cost center owner. Use the “Request” category in the portal. Standard equipment is typically delivered within 5–7 business days, subject to stock and supplier timelines.
+
+4. Security reminders: do not share passwords, do not install unapproved software, and lock your workstation whenever unattended. Phishing simulations occur periodically; always report suspicious emails using the “Report Phishing” button in Outlook. IT will never ask for your password.
+
+5. Remote work: ensure the VPN client is up to date, connect before accessing internal systems, and use only company-managed devices. If you experience unstable connections, attach VPN logs to your ticket to help diagnostics.
+
+6. For project support, migrations, or access rights beyond standard profiles, please contact the IT Support Team Lead. Complex requests may require change advisory review. You will be informed of any impacts or maintenance windows in advance.
+
