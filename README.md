@@ -7,14 +7,14 @@
 
 A lightweight Streamlit web app that helps employees find answers to internal HR/IT policy questions. It performs local retrieval over `.txt` documents (LangChain + Chroma) and uses the OpenAI API to formulate concise, professional answers. If nothing relevant is found, it politely redirects the user to contact HR.
 
-## Features
+## ✨ Features
 - Streamlit chat interface with a Swiss corporate tone
 - Local `.txt` documents indexed on first run and persisted to disk
 - Embeddings via `text-embedding-3-small` with Chroma vector store
 - Configurable OpenAI chat model (see Environment), sequential fallbacks included
 - Graceful fallback: if relevance is low, provide HR contact
 
-## Project Structure
+## 🧱 Project Structure
 ```
 .
 ├─ main.py            # Streamlit UI and chat flow
@@ -26,11 +26,11 @@ A lightweight Streamlit web app that helps employees find answers to internal HR
 └─ README.md          # This file
 ```
 
-## Prerequisites
+## ✅ Prerequisites
 - Python 3.10+
 - An OpenAI API key with access to a chat model (e.g., `gpt-4o-mini`)
 
-## Quickstart
+## 🚀 Quickstart
 1) Create and activate a virtual environment
 
    Windows (PowerShell):
@@ -62,7 +62,7 @@ streamlit run main.py
 ```
 Open the URL shown in the terminal (usually http://localhost:8501).
 
-## Environment
+## ⚙️ Environment
 The app reads configuration from environment variables (via `.env`).
 
 | Variable        | Required | Default         | Notes |
@@ -72,27 +72,27 @@ The app reads configuration from environment variables (via `.env`).
 
 Notes on models: the defaults include `gpt-5-nano`/`gpt-5-mini` as placeholders and then `gpt-4o-mini`. For reliable operation, set `OPENAI_MODEL` to a model available to your account.
 
-## How It Works
+## 🧠 How It Works
 - On startup, the app loads `.txt` files from `docs/`, splits them into ~500‑character chunks, and builds a Chroma vector store persisted to `.chroma_store/`.
 - When you ask a question, the app retrieves the top 3 most relevant chunks and sends them with your question to the OpenAI chat model.
 - If the highest relevance score is below a threshold, the app responds with a polite HR contact message.
 
-## Example Questions
+## 💬 Example Questions
 - How many vacation days do I have?
 - What should I do if I'm sick?
 - Who manages IT issues?
 
-## Troubleshooting
+## 🛠 Troubleshooting
 - Missing API key: set `OPENAI_API_KEY` in `.env`.
 - Model access: if calls fail because the model is unavailable, set `OPENAI_MODEL` to a model your account can use (e.g., `gpt-4o-mini`).
 - Index not updating after you edit docs: delete the `.chroma_store/` folder and restart the app to rebuild the index.
 
-## Privacy & Data Handling
+## 🔐 Privacy & Data Handling
 - Documents are stored locally in `docs/`; the Chroma index is cached in `.chroma_store/`.
 - When answering, the app sends the user’s question and retrieved excerpts to OpenAI. Do not include sensitive content unless your data handling policies allow it.
 - For fully offline operation, consider replacing embeddings and LLM calls with local models (not included in this MVP).
 
-## Roadmap (Ideas)
+## 📌 Roadmap (Ideas)
 - Robust language detection and user‑selectable language
 - Better retrieval (e.g., MMR, re‑ranking) and tunable thresholds
 - PDF/DOCX ingestion and file upload via UI
