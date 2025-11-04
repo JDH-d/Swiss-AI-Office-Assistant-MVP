@@ -1,5 +1,5 @@
 # Swiss AI Office Assistant (MVP)
-
+[Python 3.10+] [Streamlit] [License]
 A lightweight Streamlit web app that helps employees find answers to internal HR/IT policy questions. It performs local retrieval over `.txt` documents (LangChain + Chroma) and uses the OpenAI API to formulate concise, professional answers. If nothing relevant is found, it politely redirects the user to contact HR.
 
 ## Features
@@ -93,7 +93,4 @@ Notes on models: the defaults include `gpt-5-nano`/`gpt-5-mini` as placeholders 
 - PDF/DOCX ingestion and file upload via UI
 - Streaming responses and richer error handling
 - Automatic index refresh when `docs/` changes
-
-## Contributing
-Issues and pull requests are welcome. Please discuss significant changes via an issue first.
 
