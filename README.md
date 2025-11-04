@@ -3,7 +3,6 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-success?style=for-the-badge&logo=streamlit)
 ![OpenAI API](https://img.shields.io/badge/OpenAI-API-orange?style=for-the-badge&logo=openai)
 ![Status](https://img.shields.io/badge/Status-MVP-yellow?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)
 
 A lightweight Streamlit web app that helps employees find answers to internal HR/IT policy questions. It performs local retrieval over `.txt` documents (LangChain + Chroma) and uses the OpenAI API to formulate concise, professional answers. If nothing relevant is found, it politely redirects the user to contact HR.
 
